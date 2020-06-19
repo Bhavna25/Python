@@ -1,0 +1,25 @@
+# User function Template for python3
+
+# Complete this function
+
+
+def absolute(I):
+    # Your code here
+    abs_number = abs(I)
+
+    return abs_number
+
+#Driver Code Stars
+
+def main():
+    T = int(input()) #input the number of testcase
+    
+    while(T>0):
+        I = int(input())  #input number
+        print(absolute(I))  #call function and print
+        T -= 1               #Reduce number of testycases
+        
+if __name__ == '__main__':
+    main()
+    
+#Drive Code Ends
