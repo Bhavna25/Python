@@ -1,0 +1,23 @@
+#User function Template for python3
+
+##Complete this function
+def cToF(C):
+    #Your code here
+    F = (C * 1.8) + 32
+    return F
+    
+#Driver Code start
+
+def main():
+    T = int(input())
+    
+    while(T>0):
+        C = int(input())
+        print(math.floor(cToF(C)))
+        T -=1
+        
+        
+if __name__=="__main__":
+     main()
+     
+#Driver code Ends
