@@ -1,0 +1,33 @@
+#User function Template for python3
+
+
+##Complete this function
+def quadraticRoots(a,b,c):
+    #Your code here
+  
+    
+    d=int(b**2-4*a*c)
+    d1=d**0.5
+    if(d<0):
+        print("Imaginary")
+    elif (d>=0):
+        r1=(-b+d1)/2*a
+        r2=(-b-d1)/2*a
+        print(r1,r2)
+        
+#Driver Code start
+def main():
+   T = int(input())
+   While(T>0):
+       abc =[int(x) for x in input().strip().split()]
+       a = abs[0]
+       b= abs[1]
+       c=abs[2]
+       
+       quadraticRoots(a,b,c)
+       
+       T -= 1
+       
+if __name__=="__main__":
+     main()
+#Driver code ends
