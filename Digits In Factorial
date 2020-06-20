@@ -1,0 +1,38 @@
+#User function Template for python3
+
+
+##Complete this function
+def digitsInFactorial(N):
+    #Your code here
+    
+      
+    # factorial exists only for n>=0 
+    if (N < 0): 
+        return 0; 
+  
+    # base case 
+    if (N <= 1): 
+        return 1; 
+  
+    # else iterate through n and  
+    # calculate the value 
+    digits = 0; 
+    for i in range(2, N + 1): 
+        digits += math.log10(i); 
+  
+    return math.floor(digits) + 1; 
+  
+
+#Driver Code start
+def main():
+   T = int(input())
+   while(T>0):
+       N = int(input())
+       
+       print(digitsInFactorial(N))
+       T -= 1
+       
+if __name__=="__main__":
+    main()
+    
+#driver code ends
